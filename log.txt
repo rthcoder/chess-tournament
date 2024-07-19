@@ -1,0 +1,37 @@
+/api/v1/auth/login__POST__1721391473022__ReferenceError__ValidationError is not defined
+/api/v1/auth/login__POST__1721391581584__ValidationError__undefined
+/api/v1/auth/login__POST__1721391606491__ValidationError__undefined
+/api/v1/auth/login__POST__1721391607550__ValidationError__undefined
+/api/v1/auth/login__POST__1721391608014__ValidationError__undefined
+/api/v1/auth/login__POST__1721391608355__ValidationError__undefined
+/api/v1/auth/login__POST__1721391608664__ValidationError__undefined
+/api/v1/auth/login__POST__1721391608988__ValidationError__undefined
+/api/v1/auth/login__POST__1721391611468__ValidationError__undefined
+/api/v1/auth/login__POST__1721392295504__ReferenceError__Cannot access 'user' before initialization
+/api/v1/auth/register__POST__1721392565340__ValidationError__undefined
+/api/v1/auth/register__POST__1721392588728__ValidationError__undefined
+/api/v1/auth/register__POST__1721392589711__ValidationError__undefined
+/api/v1/auth/register__POST__1721392590529__ValidationError__undefined
+/api/v1/auth/register__POST__1721392593931__ValidationError__undefined
+/api/v1/auth/register__POST__1721392596531__ValidationError__undefined
+/api/v1/auth/register__POST__1721392597268__ValidationError__undefined
+/api/v1/auth/register__POST__1721392676077__ValidationError__undefined
+/api/v1/auth/register__POST__1721392731129__ValidationError__error.ValidationError is not a constructor
+/api/v1/auth/register__POST__1721392741620__ValidationError__undefined
+/api/v1/auth/register__POST__1721392749077__ValidationError__undefined
+/api/v1/auth/register__POST__1721392803295__ValidationError__"body.username" length must be at least 3 characters long
+/api/v1/auth/register__POST__1721392817223__ValidationError__"body.password" length must be at least 6 characters long
+/api/v1/auth/register__POST__1721392821564__MongoServerError__E11000 duplicate key error collection: chess_tournament.users index: username_1 dup key: { username: "Ali" }
+/api/v1/auth/register__POST__1721392985448__MongoServerError__E11000 duplicate key error collection: chess_tournament.users index: username_1 dup key: { username: "Ali" }
+/api/v1/auth/register__POST__1721393007315__SyntaxError__Unexpected end of JSON input
+/api/v1/auth/register__POST__1721393011589__ValidationError__"body.username" is required
+/api/v1/auth/register__POST__1721393015179__MongoServerError__E11000 duplicate key error collection: chess_tournament.users index: username_1 dup key: { username: "Alimardon" }
+/api/v1/auth/login__POST__1721393289372__ReferenceError__Cannot access 'user' before initialization
+/api/v1/auth/login__POST__1721393480584__ReferenceError__Cannot access 'user' before initialization
+/api/v1/auth/login__POST__1721393481534__ReferenceError__Cannot access 'user' before initialization
+/api/v1/auth/login__POST__1721393483119__ReferenceError__Cannot access 'user' before initialization
+/api/v1/auth/login__POST__1721393518645__Error__Illegal arguments: string, undefined
+/api/v1/auth/login__POST__1721393644960__ObjectParameterError__Parameter "filter" to findOne() must be an object, got "ali" (type string)
+/api/v1/auth/register__POST__1721394370993__ValidationError__"body.username" must only contain alpha-numeric characters
+/api/v1/auth/login__POST__1721398348472__ReferenceError__ip is not defined
+/api/v1/auth/register__POST__1721398401448__ValidationError__"body.username" must only contain alpha-numeric characters

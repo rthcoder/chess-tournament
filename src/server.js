@@ -23,13 +23,13 @@ app.get('/', (req, res) => res.send("Hello"))
 import database from "./config/config.db.js"
 
 // routes
-// import authRouter from "./routes/routes.auth.js"
+import authRouter from "./routes/auth.route.js"
 
 //start server
 !async function () {
     try {
         database()
-        // app.use(authRouter)
+        app.use(authRouter)
     } catch (error) {
         console.log(error)
     }
