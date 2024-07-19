@@ -16,6 +16,15 @@ class AuthorizationError extends Error {
     }
 };
 
+class AuthenticationError extends Error {
+    constructor(status, message) {
+        super()
+        this.status = status
+        this.name = 'AuthenticationError'
+        this.message = message
+    }
+};
+
 class InternalServerError extends Error {
     constructor(status, message) {
         super(),
@@ -28,5 +37,6 @@ class InternalServerError extends Error {
 export default {
     ValidationError,
     AuthorizationError,
-    InternalServerError
+    InternalServerError,
+    AuthenticationError
 };
