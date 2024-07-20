@@ -22,8 +22,7 @@ const matchSchema = mongoose.Schema({
     },
     result: {
         type: String,
-        enum: ['player1', 'player2', 'draw'],
-        required: true
+        enum: ['player1', 'player2', 'draw']
     },
 })
 

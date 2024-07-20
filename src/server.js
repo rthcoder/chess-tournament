@@ -24,6 +24,8 @@ import database from "./config/config.db.js";
 
 // routes
 import authRouter from "./routes/auth.route.js";
+import roundRouter from "./routes/match.route.js"
+import matchRouter from "./routes/match.route.js";
 import playerRouter from "./routes/player.route.js";
 import tournamentRouter from "./routes/tournament.route.js";
 
@@ -32,6 +34,8 @@ import tournamentRouter from "./routes/tournament.route.js";
     try {
         database();
         app.use(authRouter);
+        app.use(matchRouter);
+        app.use(roundRouter);
         app.use(playerRouter);
         app.use(tournamentRouter);
     } catch (error) {

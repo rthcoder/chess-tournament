@@ -80,3 +80,23 @@
 /api/v1/tournament/669b72636707967695656f90/addplayer__PATCH__1721465538362__ReferenceError__Cannot access 'tournament' before initialization
 /api/v1/tournament/669b72636707967695656f90/addplayer__PATCH__1721465563954__ReferenceError__Cannot access 'tournament' before initialization
 /api/v1/tournament/669b72636707967695656f90/removeplayer__PATCH__1721466753896__AuthorizationError__User is un authorized
+/api/v1/tournament__GET__1721468502792__StrictPopulateError__Cannot populate path `Player` because it is not in your schema. Set the `strictPopulate` option to false to override.
+/api/v1/tournament__GET__1721468522828__StrictPopulateError__Cannot populate path `player` because it is not in your schema. Set the `strictPopulate` option to false to override.
+/api/v1/player__POST__1721469126753__ValidationError__"body.player_name" length must be at least 10 characters long
+/api/v1/669b72636707967695656f90/match/1__POST__1721469788714__CastError__Cast to Number failed for value "NaN" (type number) at path "round" for model "Match"
+/api/v1/669b72636707967695656f90/match/2__POST__1721469804845__CastError__Cast to Number failed for value "NaN" (type number) at path "round" for model "Match"
+/api/v1/669b72636707967695656f90/match/2__POST__1721469838433__ValidationError__Match validation failed: result: Path `result` is required.
+/api/v1/669b72636707967695656f90/match/2__POST__1721469903481__ValidationError__Match validation failed: result: Path `result` is required.
+/api/v1/669b72636707967695656f90/match/2__POST__1721469944728__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/2__POST__1721469970718__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/2__POST__1721470027794__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/2__POST__1721470055924__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/2__POST__1721470065726__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/2__POST__1721470074570__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/1__POST__1721470098989__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/2__POST__1721470270414__ReferenceError__next is not defined
+/api/v1/669b72636707967695656f90/match/3__POST__1721470275364__ReferenceError__next is not defined
+/api/v1/match__GET__1721471868851__AuthorizationError__User is un authorized
+/api/v1/match/669b8cd5b2c66f9bb593f499__GET__1721471941520__StrictPopulateError__Cannot populate path `player` because it is not in your schema. Set the `strictPopulate` option to false to override.
+/api/v1/match/669b8cd5b2c66f9bb593f499__GET__1721472016490__StrictPopulateError__Cannot populate path `player` because it is not in your schema. Set the `strictPopulate` option to false to override.
+/api/v1/match/669b8cd5b2c66f9bb593f499__GET__1721472018546__StrictPopulateError__Cannot populate path `player` because it is not in your schema. Set the `strictPopulate` option to false to override.

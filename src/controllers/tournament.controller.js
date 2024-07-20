@@ -174,8 +174,6 @@ const ADD_PLAYER_TO_TOURNAMENT = async (req, res, next) => {
         tournament.participants.push(playerId);
         tournament.save();
 
-        console.log(tournament);
-
         return res
             .status(200)
             .json({
