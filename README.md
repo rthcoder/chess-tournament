@@ -49,7 +49,7 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
 
 ## Example API Request
 
-User Registration
+# User Registration
 
 Request
 
