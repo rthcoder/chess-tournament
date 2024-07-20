@@ -4,6 +4,7 @@
 ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+![JOI](https://img.shields.io/badge/JOI-00B3E6?style=for-the-badge&logo=Joi&logoColor=white)
 
 ## Description
 
