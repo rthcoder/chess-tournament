@@ -9,9 +9,9 @@
    ```
 
 2. Install dependencies:
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
 4. Create a .env file with the following content:
       ```
@@ -21,6 +21,6 @@ npm install
       ```
 
 5. Start the server:
-```
-npm start
-```
+   ```
+   npm start
+   ```
