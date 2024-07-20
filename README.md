@@ -15,7 +15,6 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
 - Tournament Management
 - Match Management
 - Leaderboard
-- API Documentation (Swagger)
 
 ## Installation
 
@@ -35,9 +34,9 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
 3. **Environment Variables** faylini yaratish (`.env`):
 
     ```plaintext
-    PORT=8888
-    MONGO_URI=mongodb://localhost:27017/chess_tournament
-    JWT_SECRET=your_secret_key
+    PORT=
+    MONGO_DB_URL=
+    JWT_SECRET=
     ```
 
 ## Usage
@@ -48,15 +47,3 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
     npm start
     ```
 
-2. **API Documentation** ni ko'rish uchun brauzeringizda quyidagi manzilga o'ting:
-
-    ```plaintext
-    http://localhost:8888/api-docs
-    ```
-
-## API Documentation
-
-Swagger dokumentatsiyasini ko'rish uchun brauzeringizda quyidagi manzilga o'ting:
-
-```plaintext
-http://localhost:8888/api-docs
