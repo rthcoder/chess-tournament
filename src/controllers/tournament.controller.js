@@ -132,12 +132,12 @@ const PUT = async (req, res, next) => {
     }
 };
 
-const ADD_PLAYER = async (req, res, next) => {
+const ADD_PLAYER_TO_TOURNAMENT = async (req, res, next) => {
     try {
 
-        const { playerId } = req?.body
+        const { playerId } = req?.body;
 
-        const player = await Player.findById(playerId)
+        const player = await Player.findById(playerId);
 
         if (!player) {
             return res
@@ -191,10 +191,71 @@ const ADD_PLAYER = async (req, res, next) => {
     }
 };
 
+const REMOVE_PLAYER_FROM_TOURNAMENT = async (req, res, next) => {
+    try {
+
+        const { playerId } = req?.body
+
+        const player = await Player.findById(playerId);
+
+        if (!player) {
+            return res
+                .status(404)
+                .json({
+                    status: 404,
+                    message: 'The player not found!',
+                    data: false
+                });
+        };
+
+        const tournament = await Tournament.findById(req.params.id);
+
+        if (!tournament) {
+            return res
+                .status(404)
+                .json({
+                    status: 404,
+                    message: "Tournament not found!",
+                    data: false
+                })
+        };
+
+        if (!tournament.participants.includes(playerId)) {
+            return res
+                .status(409)
+                .json({
+                    status: 409,
+                    message: "This player does not exists in list of players in this tournament!",
+                    data: false
+                })
+        };
+
+        const participants = tournament.participants.filter((el) => {
+            if (el.toString() != playerId) return el
+        })
+
+        tournament.participants = participants
+        tournament.save()
+
+        return res
+            .status(200)
+            .json({
+                status: 200,
+                message: 'The player successfully removed from tournament!',
+                data: tournament
+            });
+
+    } catch (error) {
+        console.log(error.message);
+        return next(error);
+    }
+}
+
 export default {
     GET,
     POST,
     PUT,
     DELETE,
-    ADD_PLAYER
+    ADD_PLAYER_TO_TOURNAMENT,
+    REMOVE_PLAYER_FROM_TOURNAMENT
 }

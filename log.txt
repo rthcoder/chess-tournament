@@ -79,3 +79,4 @@
 /api/v1/tournament/669b5ecb7bad822f74a5bd9f/addplayer__PATCH__1721465051645__ReferenceError__updated_tournament is not defined
 /api/v1/tournament/669b72636707967695656f90/addplayer__PATCH__1721465538362__ReferenceError__Cannot access 'tournament' before initialization
 /api/v1/tournament/669b72636707967695656f90/addplayer__PATCH__1721465563954__ReferenceError__Cannot access 'tournament' before initialization
+/api/v1/tournament/669b72636707967695656f90/removeplayer__PATCH__1721466753896__AuthorizationError__User is un authorized
