@@ -14,7 +14,8 @@ npm install
 ```
 
 4. Create a .env file with the following content:
-      ```PORT=
+      ```
+      PORT=
       MONGO_URI=
       JWT_SECRET=
       ```
