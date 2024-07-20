@@ -47,3 +47,6 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
     npm start
     ```
 
+## Usage
+
+# Example API Request
