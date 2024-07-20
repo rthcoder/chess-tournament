@@ -40,3 +40,23 @@
 /api/v1/addadmin/669a74895fa9034940ff3d24__PATCH__1721456123020__AuthenticationError__You do not have permission to access this resource.
 /api/v1/addadmin/669a5fd7132c1a80b3d58d18__PATCH__1721456589765__AuthorizationError__User is un authorized
 /api/v1/removeadmin/669a5fd7132c1a80b3d58d18__PATCH__1721456999128__AuthorizationError__User is un authorized
+/api/v1/player__POST__1721458142031__ValidationError__"body.player_name" is required
+/api/v1/player__POST__1721458177983__ValidationError__"body.player_name" length must be at least 10 characters long
+/api/v1/player__POST__1721458193502__ValidationError__"body.player_name" must only contain alpha-numeric characters
+/api/v1/player__POST__1721458226516__ValidationError__"body.player_age" is required
+/api/v1/player__POST__1721458239153__ValidationError__"body.player_rating" is required
+/api/v1/player__POST__1721458252733__ValidationError__"body.player_rating" must be a number
+/api/v1/player__POST__1721458256078__AuthorizationError__User is un authorized
+/api/v1/player__POST__1721458273219__ValidationError__"body.country" is required
+/api/v1/player__POST__1721458274148__ValidationError__"body.country" is required
+/api/v1/player__POST__1721458277575__ValidationError__"body.country" is required
+/api/v1/player__POST__1721458288711__AuthorizationError__User is un authorized
+/api/v1/player__POST__1721458290407__AuthorizationError__User is un authorized
+/api/v1/player__POST__1721458505079__AuthenticationError__You do not have permission to access this resource.
+/api/v1/player/669b5e8d66dcf4c676d33b82__GET__1721459030614__ReferenceError__data is not defined
+/api/v1/player/669b5e8d66dcf4c676d33b85__GET__1721459042162__ReferenceError__data is not defined
+/api/v1/player/669b5e8d66dcf4c676d33b83__GET__1721459066524__AuthorizationError__User is un authorized
+/api/v1/player/669b5e8d66dcf4c676d33b83__GET__1721459084786__AuthenticationError__You do not have permission to access this resource.
+/api/v1/player/669b5e8d66dcf4c676d33b83__PUT__1721459643719__AuthorizationError__User is un authorized
+/api/v1/player/669b5e8d66dcf4c676d33b83__PUT__1721459666853__ReferenceError__player_name is not defined
+/api/v1/player/669b5e8d66dcf4c676d33b83__PUT__1721459743026__CastError__Cast to Number failed for value "helo" (type string) at path "player_rating"

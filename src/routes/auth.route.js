@@ -8,7 +8,7 @@ const router = Router();
 
 router.post('/api/v1/auth/login', auth.LOGIN);
 router.post('/api/v1/auth/register', validation, auth.REGISTER);
-router.patch('/api/v1/addadmin/:id', checkToken, isAdmin, auth.ADD_ADMIN)
-router.patch('/api/v1/removeadmin/:id', checkToken, isAdmin, auth.REMOVE_ADMIN)
+router.patch('/api/v1/addadmin/:id', checkToken, isAdmin, auth.ADD_ADMIN);
+router.patch('/api/v1/removeadmin/:id', checkToken, isAdmin, auth.REMOVE_ADMIN);
 
 export default router;

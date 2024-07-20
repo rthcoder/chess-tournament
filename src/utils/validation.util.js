@@ -18,10 +18,10 @@ const tournamentValidation = JOI.object({
 const playerValidation = JOI.object({
     body: JOI.object({
 
-        player_name: JOI.string().required().min(10).max(40).alphanum(),
+        player_name: JOI.string().required().min(10).max(40),
         player_age: JOI.number().required(),
         player_rating: JOI.number().required(),
-        country: JOI.string().min(3).max(50)
+        country: JOI.string().min(3).max(50).required()
     })
 });
 

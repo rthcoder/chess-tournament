@@ -1,37 +1,39 @@
-import fs from "fs"
-import cors from "cors"
-import "./config/config.js"
-import express from 'express'
+import fs from "fs";
+import cors from "cors";
+import "./config/config.js";
+import express from 'express';
 
-const app = express()
-const PORT = process.env.PORT || 3001
+const app = express();
+const PORT = process.env.PORT || 3001;
 
 //middlewares
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
 
 //cors settings
 app.use(cors({
     origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE"
-}))
+}));
 
 //test for working or not server
-app.get('/', (req, res) => res.send("Hello"))
+app.get('/', (req, res) => res.send("Hello"));
 
-//database function
-import database from "./config/config.db.js"
+//initialize database 
+import database from "./config/config.db.js";
 
 // routes
-import authRouter from "./routes/auth.route.js"
+import authRouter from "./routes/auth.route.js";
+import playerRouter from "./routes/player.route.js";
 
 //start server
 !async function () {
     try {
-        database()
-        app.use(authRouter)
+        database();
+        app.use(authRouter);
+        app.use(playerRouter);
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
     app.use((error, req, res, next) => {
 
@@ -44,7 +46,7 @@ import authRouter from "./routes/auth.route.js"
                 errorName: error.name,
                 error: true,
             })
-        }
+        };
 
 
         if (error.status != 500) {
@@ -55,7 +57,7 @@ import authRouter from "./routes/auth.route.js"
                 errorName: error.name,
                 error: true,
             })
-        }
+        };
 
 
         return res.status(error.status).json({
@@ -64,6 +66,6 @@ import authRouter from "./routes/auth.route.js"
             errorName: error.name,
             error: true,
         })
-    })
+    });
     app.listen(PORT, () => console.log(`🚀 BackEnd server is running http://localhost:` + PORT))
-}()
+}();

@@ -14,6 +14,16 @@ export default (req, res, next) => {
             }
         }
 
+        if (req.method === 'POST' && req.url == '/api/v1/player') {
+            const { error } = validation.playerValidation.validate({ body: req.body })
+
+            if (error) {
+                return next(
+                    new errors.ValidationError(400, error.message)
+                )
+            }
+        }
+
         return next()
 
 
