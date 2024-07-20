@@ -1,4 +1,4 @@
-import errors from "../utils/error.js";
+import Player from "../models/player.model.js"
 import Tournament from "../models/tournament.model.js";
 
 const GET = async (req, res, next) => {
@@ -132,9 +132,69 @@ const PUT = async (req, res, next) => {
     }
 };
 
+const ADD_PLAYER = async (req, res, next) => {
+    try {
+
+        const { playerId } = req?.body
+
+        const player = await Player.findById(playerId)
+
+        if (!player) {
+            return res
+                .status(404)
+                .json({
+                    status: 404,
+                    message: 'The player not found!',
+                    data: false
+                });
+        };
+
+        const tournament = await Tournament.findById(req.params.id);
+
+        if (!tournament) {
+            return res
+                .status(404)
+                .json({
+                    status: 404,
+                    message: "Tournament not found!",
+                    data: false
+                })
+        };
+
+        if (tournament.participants.includes(playerId)) {
+            return res
+                .status(409)
+                .json({
+                    status: 409,
+                    message: "This player is already exists in list of players in this tournament!",
+                    data: false
+                })
+        };
+
+        tournament.participants.push(playerId);
+        tournament.save();
+
+        console.log(tournament);
+
+        return res
+            .status(200)
+            .json({
+                status: 200,
+                message: 'The player successfully added to tournament!',
+                data: tournament
+            });
+
+
+    } catch (error) {
+        console.log(error.message);
+        return next(error);
+    }
+};
+
 export default {
     GET,
     POST,
     PUT,
-    DELETE
+    DELETE,
+    ADD_PLAYER
 }

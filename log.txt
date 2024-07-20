@@ -76,3 +76,6 @@
 /api/v1/tournament__GET__1721463697789__AuthorizationError__User is un authorized
 /api/v1/tournament__GET__1721463794415__AuthorizationError__User is un authorized
 /api/v1/tournament/669b72ae7d37721deaac32a4__PUT__1721464004383__AuthorizationError__User is un authorized
+/api/v1/tournament/669b5ecb7bad822f74a5bd9f/addplayer__PATCH__1721465051645__ReferenceError__updated_tournament is not defined
+/api/v1/tournament/669b72636707967695656f90/addplayer__PATCH__1721465538362__ReferenceError__Cannot access 'tournament' before initialization
+/api/v1/tournament/669b72636707967695656f90/addplayer__PATCH__1721465563954__ReferenceError__Cannot access 'tournament' before initialization
