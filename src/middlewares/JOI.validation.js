@@ -18,6 +18,7 @@ export default (req, res, next) => {
 
 
     } catch (error) {
-        return next(new errors.ValidationError(400, error.message))
+        console.log(error.message);
+        return next(error)
     }
 }

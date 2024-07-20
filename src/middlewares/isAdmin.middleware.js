@@ -11,13 +11,12 @@ export default async function (req, res, next) {
         }
         else {
             return next(
-                new error.AuthenticationError("You do not have permission to access this resource.")
+                new error.AuthenticationError(401, "You do not have permission to access this resource.")
             )
         }
 
     } catch (error) {
-        return next(
-            new error.AuthenticationError(403, error.message)
-        );
+        console.log(error.message);
+        return next(error)
     }
 }

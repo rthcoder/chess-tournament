@@ -40,8 +40,7 @@ export default async function (req, res, next) {
 
         next();
     } catch (error) {
-        return next(
-            new errors.AuthorizationError(400, error.message)
-        );
+        console.log(error.message);
+        return next(error)
     }
 };
