@@ -22,7 +22,7 @@ const GET = async (req, res, next) => {
                 .status(200)
                 .json({
                     status: 200,
-                    message: 'The player successfully created!',
+                    message: 'successfully read player!',
                     data: player
                 });
         };
@@ -34,7 +34,7 @@ const GET = async (req, res, next) => {
             .status(200)
             .json({
                 status: 200,
-                message: 'The player successfully created!',
+                message: 'successfully read players!',
                 data: players
             });
     } catch (error) {

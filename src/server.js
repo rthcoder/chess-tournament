@@ -25,6 +25,7 @@ import database from "./config/config.db.js";
 // routes
 import authRouter from "./routes/auth.route.js";
 import playerRouter from "./routes/player.route.js";
+import tournamentRouter from "./routes/tournament.route.js";
 
 //start server
 !async function () {
@@ -32,6 +33,7 @@ import playerRouter from "./routes/player.route.js";
         database();
         app.use(authRouter);
         app.use(playerRouter);
+        app.use(tournamentRouter);
     } catch (error) {
         console.log(error);
     }

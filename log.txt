@@ -60,3 +60,19 @@
 /api/v1/player/669b5e8d66dcf4c676d33b83__PUT__1721459643719__AuthorizationError__User is un authorized
 /api/v1/player/669b5e8d66dcf4c676d33b83__PUT__1721459666853__ReferenceError__player_name is not defined
 /api/v1/player/669b5e8d66dcf4c676d33b83__PUT__1721459743026__CastError__Cast to Number failed for value "helo" (type string) at path "player_rating"
+/api/v1/tournament__POST__1721463141488__AuthorizationError__User is un authorized
+/api/v1/tournament__POST__1721463161680__ValidationError__Tournament validation failed: tournament_name: Path `tournament_name` is required., tournament_start_date: Path `tournament_start_date` is required., tournament_end_date: Path `tournament_end_date` is required.
+/api/v1/tournament__POST__1721463278901__ValidationError__"body.tournament_name" is required
+/api/v1/tournament__POST__1721463299316__ValidationError__"body.tournament_name" must only contain alpha-numeric characters
+/api/v1/tournament__POST__1721463323408__ValidationError__"body.tournament_start_date" is required
+/api/v1/tournament__POST__1721463341928__ValidationError__"body.tournament_end_date" is required
+/api/v1/tournament__POST__1721463362954__ValidationError__"body.tournament_end_date" must be a valid date
+/api/v1/tournament__POST__1721463370578__ValidationError__"body.tournament_end_date" must be a valid date
+/api/v1/tournament__POST__1721463395964__ReferenceError__new_player is not defined
+/api/v1/tournament__POST__1721463408900__ValidationError__"body.tournament_end_date" must be a valid date
+/api/v1/tournament__POST__1721463412646__ValidationError__"body.tournament_start_date" must be a valid date
+/api/v1/tournament__POST__1721463445304__MongoServerError__E11000 duplicate key error collection: chess_tournament.tournaments index: tournament_name_1 dup key: { tournament_name: "O'zbekiston kubogi 2024" }
+/api/v1/tournament__POST__1721463452697__ValidationError__"body.tournament_name" length must be less than or equal to 30 characters long
+/api/v1/tournament__GET__1721463697789__AuthorizationError__User is un authorized
+/api/v1/tournament__GET__1721463794415__AuthorizationError__User is un authorized
+/api/v1/tournament/669b72ae7d37721deaac32a4__PUT__1721464004383__AuthorizationError__User is un authorized

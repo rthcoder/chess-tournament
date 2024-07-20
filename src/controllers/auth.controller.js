@@ -27,7 +27,7 @@ const REGISTER = async (req, res, next) => {
 
     } catch (error) {
         console.log(error.message);
-        return next(error)
+        return next(error);
     }
 }
 
@@ -63,7 +63,7 @@ const LOGIN = async (req, res, next) => {
 
     } catch (error) {
         console.log(error.message);
-        return next(error)
+        return next(error);
     }
 };
 
@@ -106,7 +106,7 @@ const ADD_ADMIN = async (req, res, next) => {
 
     } catch (error) {
         console.log(error.message);
-        return next(error)
+        return next(error);
     }
 }
 
@@ -148,7 +148,7 @@ const REMOVE_ADMIN = async (req, res, next) => {
 
     } catch (error) {
         console.log(error.message);
-        return next(error)
+        return next(error);
     }
 }
 

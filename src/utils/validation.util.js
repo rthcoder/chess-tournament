@@ -9,7 +9,7 @@ const userValidation = JOI.object({
 
 const tournamentValidation = JOI.object({
     body: JOI.object({
-        tournament_name: JOI.string().required().min(5).max(30).alphanum(),
+        tournament_name: JOI.string().required().min(5).max(70),
         tournament_start_date: JOI.date().required(),
         tournament_end_date: JOI.date().required()
     })
