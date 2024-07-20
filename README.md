@@ -47,3 +47,7 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
     ```sh
     npm start
     ```
+
+
+## Documentation Link
+https://documenter.getpostman.com/view/37117627/2sA3kUGNFh
