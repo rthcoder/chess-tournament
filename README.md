@@ -47,6 +47,38 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
     npm start
     ```
 
-## Usage
+## Example API Request
 
-# Example API Request
+User Registration
+
+Request
+
+```
+POST /api/v1/auth/register
+Content-Type: application/json
+
+{
+    "username": "MannopovMuhammadamin",
+    "password": "12345678"
+}
+
+```
+
+Response
+```
+{
+    "status": 200,
+    "message": "The user successfully sign up!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjY5YjliOTM2MzYzMmVjNzYzOGFmZDYyIiwiaXNfYWRtaW4iOmZhbHNlLCJpcCI6Ijo6MSIsImFnZW50IjoiUG9zdG1hblJ1bnRpbWUvNy40MC4wIiwiaWF0IjoxNzIxNDczOTQwLCJleHAiOjE3MjE1NjAzNDB9._O13yiXR-oL_CEotPIB_-UeTXs7kU1As9ZkKG8wwHWk",
+    "data": {
+        "username": "JohnDoe",
+        "password": "$2a$10$3oYCTocY2oqZuwnCtDJQzelnFn1BLrgoEhqlJKg9bhEHo4NtyB0GW",
+        "is_admin": false,
+        "_id": "669b9b9363632ec7638afd62",
+        "user_created_at": "2024-07-20T11:12:19.801Z",
+        "createdAt": "2024-07-20T11:12:19.802Z",
+        "updatedAt": "2024-07-20T11:12:19.802Z",
+        "__v": 0
+    }
+}
+```
