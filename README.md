@@ -9,14 +9,17 @@
    ```
 
 2. Install dependencies:
-``` npm install ```
-
-4. Create a .env file with the following content:
-     ```
-    PORT=
-    MONGO_URI=
-    JWT_SECRET=
+```
+npm install
 ```
 
+4. Create a .env file with the following content:
+      ```PORT=
+      MONGO_URI=
+      JWT_SECRET=
+      ```
+
 5. Start the server:
-```npm start```
+```
+npm start
+```
