@@ -49,8 +49,7 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
 
 ## Example API Request
 
-# User Registration
-
+User Registration
 Request
 
 ```
@@ -82,3 +81,37 @@ Response
     }
 }
 ```
+
+User Login
+
+Request
+
+```
+POST /api/v1/auth/login
+Content-Type: application/json
+
+{
+    "username": "JohnDoe",
+    "password": "12345678"
+}
+```
+
+Response
+```
+{
+    "status": 200,
+    "message": "The user successfully sign in!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjY5YjliOTM2MzYzMmVjNzYzOGFmZDYyIiwiaXNfYWRtaW4iOmZhbHNlLCJpcCI6Ijo6MSIsImFnZW50IjoiUG9zdG1hblJ1bnRpbWUvNy40MC4wIiwiaWF0IjoxNzIxNDc0MDQ1LCJleHAiOjE3MjE1NjA0NDV9.w8he0yApVFZKXrYXwEWZLOTV-3MTUZVWvhDxz16BqPQ",
+    "data": {
+        "_id": "669b9b9363632ec7638afd62",
+        "username": "JohnDoe",
+        "password": "$2a$10$3oYCTocY2oqZuwnCtDJQzelnFn1BLrgoEhqlJKg9bhEHo4NtyB0GW",
+        "is_admin": false,
+        "user_created_at": "2024-07-20T11:12:19.801Z",
+        "createdAt": "2024-07-20T11:12:19.802Z",
+        "updatedAt": "2024-07-20T11:12:19.802Z",
+        "__v": 0
+    }
+}
+```
+
