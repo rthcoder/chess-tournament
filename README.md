@@ -23,8 +23,8 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
 1. **Repository** ni klonlash:
 
     ```sh
-    git clone https://github.com/username/chess-tournament.git
-    cd chess-tournament
+    git clone https://github.com/tohirdavrsmart/lid-sender-bot.git
+    cd lid-sender-bot
     ```
 
 2. **Dependencies** ni o'rnatish:
@@ -38,7 +38,6 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
     ```plaintext
     PORT=
     MONGO_DB_URL=
-    JWT_SECRET=
     ```
 
 ## Usage
@@ -50,5 +49,3 @@ Chess Tournament Management System - bu shaxmat turnirlarini boshqarish uchun ba
     ```
 
 
-## Documentation Link
-https://documenter.getpostman.com/view/37117627/2sA3kUGNFh
